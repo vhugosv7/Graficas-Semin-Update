@@ -4,7 +4,16 @@ import matplotlib.pyplot as plt
 import numpy as np
 
 #Librerias a utilizar
-
+def autolabel(rects):
+    """Funcion para agregar una etiqueta con el valor en cada barra"""
+    for rect in rects:
+        height = rect.get_height()
+        ax.annotate('{}'.format(height),
+                    xy=(rect.get_x() + rect.get_width() / 2, height),
+                    xytext=(0, 3),  # posicion de la etiqueta de valores
+                    textcoords="offset points",
+                    ha='center', va='bottom')
+        
 df = pd.read_excel('pacientes-1-171805.xlsx')#Cargar archivo de pacientes
 # 
 hombre =df['Sexo'] == "Masculino" #seleccion especifica de columna sexo
@@ -44,15 +53,6 @@ ax.set_xticklabels(timsap)
 #Añadimos un legend() esto permite mmostrar con colores a que pertence cada valor.
 ax.legend()
 
-def autolabel(rects):
-    """Funcion para agregar una etiqueta con el valor en cada barra"""
-    for rect in rects:
-        height = rect.get_height()
-        ax.annotate('{}'.format(height),
-                    xy=(rect.get_x() + rect.get_width() / 2, height),
-                    xytext=(0, 3),  # posicion de la etiqueta de valores
-                    textcoords="offset points",
-                    ha='center', va='bottom')
 
 #Añadimos las etiquetas para cada barra
 autolabel(rects1)
