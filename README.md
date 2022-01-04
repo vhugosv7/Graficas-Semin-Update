@@ -1,4 +1,4 @@
-- 👋 Hi, I’m @hugosv7
+- 👋 Hi, I’m Victor
 - 👀 I’m interested in me
 - 🌱 I’m currently learning python
 - 💞️ I’m looking to collaborate with me
