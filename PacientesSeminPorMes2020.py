@@ -3,12 +3,12 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 # leemos el fichero
-libro = load_workbook('Paciente-2021-12-07.xlsx')
+libro = load_workbook('Paciente-2022-01-11.xlsx')
 
 # obtenemos la pestaña/hoja activa (nada mas abrir es la primera)
 hoja = libro.active
 
-df = pd.read_excel("Paciente-2021-12-07.xlsx")#Cargar archivo Pacientes
+df = pd.read_excel("Paciente-2022-01-11.xlsx")#Cargar archivo Pacientes
 arreglo = np.array([])
 
 size= df.shape[0] #Obtenemos el tamaño del archivo
