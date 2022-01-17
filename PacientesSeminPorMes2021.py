@@ -5,15 +5,13 @@ from openpyxl import load_workbook
 #Librerias necesarias
 
 # leemos el fichero
-libro = load_workbook('Paciente-2021-12-07.xlsx')
+libro = load_workbook('Paciente-2022-01-11.xlsx')
 
 # obtenemos la pestaña/hoja activa (nada mas abrir es la primera)
 hoja = libro.active
 
-
-
 # Cargamos el archivo de pacientes
-df = pd.read_excel("Paciente-2021-12-07.xlsx")
+df = pd.read_excel("Paciente-2022-01-11.xlsx")
 
 arreglo = np.array([])#Arreglo para almacenar las fechas de registro
 
