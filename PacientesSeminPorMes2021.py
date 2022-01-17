@@ -1,8 +1,15 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from openpyxl import load_workbook
 #Librerias necesarias
-#Datos tomados antes del 20 de diciembre
+
+# leemos el fichero
+libro = load_workbook('Paciente-2021-12-07.xlsx')
+
+# obtenemos la pestaña/hoja activa (nada mas abrir es la primera)
+hoja = libro.active
+
 
 
 # Cargamos el archivo de pacientes
