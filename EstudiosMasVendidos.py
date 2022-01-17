@@ -1,7 +1,13 @@
 import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
+from openpyxl import load_workbook
 #Librerias a utilizar 
+
+libro = load_workbook('CitaSucursal-2021-12-07.xlsx')
+# obtenemos la pestaña/hoja activa (nada mas abrir es la primera)
+hoja = libro.active
+
 
 #Carga del archivo Excel de citas
 df = pd.read_excel("CitaSucursal-2021-12-07.xlsx")
