@@ -109,7 +109,7 @@ plt.title('Usuarios en Semin por mes 2021')
 ## Mostramos Gráfica
 plt.show()
 
-#Guardamos lq grafica
+#Guardamos la grafica
 plt.savefig('Semin por mes 2021.jpg')
 
 
